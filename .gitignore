@@ -16,11 +16,17 @@ __pycache__/
 !.env.example
 
 # Bloqueia queries e arquivos de banco locais (mantém docs/, data/ e database/)
+# Pastas ocultas e bases de dados
+data/
+**/data/
+docs/
+**/docs/
 queries/
 **/queries/
 *.db
 *.sqlite
 *.sqlite3
+
 
 # Configurações do VS Code
 .vscode/

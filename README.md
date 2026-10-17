@@ -108,4 +108,4 @@ Caso prefira rodar diretamente no seu ambiente Python local ou via WSL:
 ## 🔒 Segurança e Boas Práticas
 
 * **Credenciais:** O arquivo `.env` nunca deve ser versionado no Git. Utilize sempre `.env.example` para documentar novas variáveis necessárias.
-* **Dados Sensíveis:** Pastas contendo arquivos reais de dados ou logs (`data/`, `docs/`, `queries/`, `*.log`) DEVEM SER IGNORADAS pelo `.gitignore` e `.dockerignore` para proteger os dados e mantê-los em conformidade regulatória (LGPD, COAF)
+* **Dados Sensíveis:** Pastas contendo arquivos reais de dados ou logs (`data/`, `docs/`, `queries/`, `*.log`) DEVEM SER IGNORADAS pelo `.gitignore` e `.dockerignore` para proteger os dados e mantê-los em conformidade regulatória (LGPD, COAF). Como esta versão é Open Source, não há problema em deixar a pasta pública. 

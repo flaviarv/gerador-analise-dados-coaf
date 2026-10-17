@@ -1,0 +1,44 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Ficheiros compilados e cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Variáveis de ambiente e credenciais locais (Crítico)
+.env
+.env.*
+!.env.example
+
+# Pastas ocultas e bases de dados
+data/
+**/data/
+docs/
+**/docs/
+queries/
+**/queries/
+*.db
+*.sqlite
+*.sqlite3
+
+# Configurações do VS Code (bloqueia tudo, sem subir preferências locais)
+.vscode/
+
+# Relatórios de testes e logs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Docker / Compose overrides locais
+docker-compose.override.yml
+
+# Ficheiros do sistema e rascunhos
+.DS_Store
+Thumbs.db
+README2.md

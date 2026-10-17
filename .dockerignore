@@ -1,0 +1,47 @@
+# Ambientes virtuais e Git
+.venv/
+venv/
+env/
+.git/
+
+# Ficheiros compilados e cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Credenciais e segredos locais (Crítico para não ir na imagem)
+.env
+.env.*
+
+# Configurações do VS Code e editores locais
+.vscode/
+.idea/
+
+# Documentação e ficheiros de leitura (desnecessários dentro do container)
+README.md
+README2.md
+.dockerignore
+Dockerfile
+.gitignore
+
+# Pastas de dados, documentação e consultas
+data/
+**/data/
+docs/
+**/docs/
+queries/
+**/queries/
+
+# Bases de dados locais, logs e temporários
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ficheiros do sistema operativo
+.DS_Store
+Thumbs.db

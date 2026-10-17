@@ -10,6 +10,7 @@ Aplicação em Python projetada para processamento e análise de dados relaciona
 
 Para rodar esta aplicação, você precisa apenas de:
 * [Docker](https://docs.docker.com/get-docker/) instalado na máquina (Windows, macOS ou Linux).
+* [MySQL Server] (v8.0+ recomendado) instalado. Para testes, você pode configurar com porta, login e senha padrões. Também deve criar um banco de dados com um nome (ex: `analise-dados-sinteticos-pld-ft`) para receber as tabelas. Para ambiente de produção, faça sua própria proteção. 
 
 ---
 
@@ -18,8 +19,8 @@ Para rodar esta aplicação, você precisa apenas de:
 Abra o terminal e execute:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/gerador-analise-dados-coaf-docker.git
-cd gerador-analise-dados-coaf-docker
+git clone https://github.com/flaviarv/gerador-dados-pld-ft.git
+cd gerador-dados-pld-ft
 ```
 
 ---
@@ -53,8 +54,8 @@ Construa a imagem Docker e inicie a aplicação apontando para o seu `.env`:
 # 1. Construir a imagem da aplicação
 docker build -t gerador-dados-pld-ft .
 
-# 2. Executar o container em modo interativo
-docker run --rm -it --env-file .env gerador-coaf # ótimo execução em termos de cibersegurança 
+# Execução padrão compatível com Windows, macOS e Linux
+docker run --rm -it --add-host=host.docker.internal:host-gateway --env-file .env gerador-dados-pld-ft
 ```
 
 ---

@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762.903 1580" width="762.903" height="1580" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="ORQ" data-label="⚙️ 1. Camada de Orquestração &amp; Controle">
+  <rect x="178.4925" y="40" width="274.02" height="215.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="178.4925" y="40" width="274.02" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="190.4925" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">⚙️ 1. Camada de Orquestração &amp; Controle</text>
+</g>
+<g class="subgraph" data-id="BRONZE" data-label="📥 2. Camada de Ingestão &amp; Dados Brutos (Raw / Bronze)">
+  <rect x="40" y="383.90000000000003" width="682.903" height="283.90000000000003" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="383.90000000000003" width="682.903" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="397.90000000000003" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">📥 2. Camada de Ingestão &amp; Dados Brutos (Raw / Bronze)</text>
+</g>
+<g class="subgraph" data-id="SILVER" data-label="🔄 3. Camada de Transformação &amp; Qualidade (Silver)">
+  <rect x="81.644" y="796.1" width="466.9759999999999" height="300.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="81.644" y="796.1" width="466.9759999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="93.644" y="810.1" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">🔄 3. Camada de Transformação &amp; Qualidade (Silver)</text>
+</g>
+<g class="subgraph" data-id="GOLD" data-label="💾 4. Camada de Entrega &amp; Persistência (Gold)">
+  <rect x="165.52500000000003" y="1225.1999999999998" width="557.3779999999999" height="314.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="165.52500000000003" y="1225.1999999999998" width="557.3779999999999" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="177.52500000000003" y="1239.1999999999998" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">💾 4. Camada de Entrega &amp; Persistência (Gold)</text>
+</g>
+<polyline class="edge" data-from="B" data-to="C" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="1. Dispara Extração" points="315.5025,239.60000000000002 315.5025,427.90000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D1" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2. Ingestão para Join" points="130.6975,651.8000000000001 130.6975,778.1 261.8517499999999,778.1 261.8517499999999,840.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D2" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2. Ingestão para Join" points="315.50249999999994,651.8000000000001 315.50249999999994,840.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="D3" data-to="E" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="2. Ingestão para Join" points="566.2565,651.8000000000001 566.2565,709.8000000000001 512.892125,709.8000000000001 512.892125,778.1 369.15324999999996,778.1 369.15324999999996,840.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="F" data-to="G" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="4. Despacha Tabela Única" points="431.24649999999997,1068.225 431.24649999999997,1269.1999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="A" data-to="B" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="315.5025,137.8 315.5025,185.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D1" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Gera Modelagem Estrela" points="262.03700000000003,481.70000000000005 262.03700000000003,493.70000000000005 130.6975,493.70000000000005 130.6975,598" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D2" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Gera Calendário" points="315.5025,481.70000000000005 315.50249999999994,598" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="C" data-to="D3" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Gera Fato" points="368.96799999999996,481.70000000000005 368.96799999999996,493.70000000000005 566.2565,493.70000000000005 566.2565,598" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="V1" data-style="dotted" data-arrow-start="false" data-arrow-end="true" data-label="Validação Estrita" points="279.7353333333333,893.9000000000001 279.7353333333333,905.9000000000001 199.75849999999997,905.9000000000001 199.75849999999997,1014.4250000000001" fill="none" stroke="var(--_line)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="E" data-to="F" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="3. Executa Relacionamento" points="351.26966666666664,893.9000000000001 351.26966666666664,905.9000000000001 431.24649999999997,905.9000000000001 431.24649999999997,1014.4250000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="H" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Backup Físico" points="402.7658333333334,1322.9999999999998 402.7658333333334,1334.9999999999998 292.90200000000004,1334.9999999999998 292.90200000000004,1439.2999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="G" data-to="I" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Carga Automatizada" points="459.7271666666667,1322.9999999999998 459.7271666666667,1334.9999999999998 569.5909999999999,1334.9999999999998 569.5909999999999,1439.2999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="B" data-to="C" data-label="1. Dispara Extração">
+  <rect x="261.5025" y="304.6" width="107.938" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="315.4715" y="319.75" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">1. Dispara Extração</text>
+</g>
+<g class="edge-label" data-from="D1" data-to="E" data-label="2. Ingestão para Join">
+  <rect x="72.69749999999999" y="716.8000000000001" width="115.66000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="130.5275" y="731.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. Ingestão para Join</text>
+</g>
+<g class="edge-label" data-from="D2" data-to="E" data-label="2. Ingestão para Join">
+  <rect x="257.50249999999994" y="716.8000000000001" width="115.66000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="315.3324999999999" y="731.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. Ingestão para Join</text>
+</g>
+<g class="edge-label" data-from="D3" data-to="E" data-label="2. Ingestão para Join">
+  <rect x="454.892125" y="716.8000000000001" width="115.66000000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="512.722125" y="731.95" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">2. Ingestão para Join</text>
+</g>
+<g class="edge-label" data-from="F" data-to="G" data-label="4. Despacha Tabela Única">
+  <rect x="361.24649999999997" y="1145.9" width="139.42000000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="430.9565" y="1161.0500000000002" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">4. Despacha Tabela Única</text>
+</g>
+<g class="edge-label" data-from="C" data-to="D1" data-label="Gera Modelagem Estrela">
+  <rect x="63.69749999999999" y="524.7" width="133.48000000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="130.4375" y="539.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Gera Modelagem Estrela</text>
+</g>
+<g class="edge-label" data-from="C" data-to="D2" data-label="Gera Calendário">
+  <rect x="267.5025" y="524.7" width="95.46400000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="315.2345" y="539.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Gera Calendário</text>
+</g>
+<g class="edge-label" data-from="C" data-to="D3" data-label="Gera Fato">
+  <rect x="533.7565" y="524.7" width="64.57600000000001" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="566.0445" y="539.85" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Gera Fato</text>
+</g>
+<g class="edge-label" data-from="E" data-to="V1" data-label="Validação Estrita">
+  <rect x="150.75849999999997" y="936.9000000000001" width="97.84000000000003" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="199.67849999999999" y="952.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Validação Estrita</text>
+</g>
+<g class="edge-label" data-from="E" data-to="F" data-label="3. Executa Relacionamento">
+  <rect x="359.24649999999997" y="936.9000000000001" width="143.578" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="431.03549999999996" y="952.0500000000001" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">3. Executa Relacionamento</text>
+</g>
+<g class="edge-label" data-from="G" data-to="H" data-label="Backup Físico">
+  <rect x="247.902" y="1365.9999999999998" width="89.524" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="292.664" y="1381.1499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Backup Físico</text>
+</g>
+<g class="edge-label" data-from="G" data-to="I" data-label="Carga Automatizada">
+  <rect x="513.0909999999999" y="1365.9999999999998" width="112.09600000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="569.1389999999999" y="1381.1499999999999" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Carga Automatizada</text>
+</g>
+<g class="node" data-id="A" data-label="🖥️ CLI: python main.py
+&lt;b&gt;(Ponto de Entrada)&lt;/b&gt;" data-shape="rectangle">
+  <rect x="225.985" y="84" width="179.03499999999997" height="53.800000000000004" rx="0" ry="0" fill="#334155" stroke="#64748b" stroke-width="0.75" />
+  <text x="315.5025" y="110.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="315.5025" dy="-3.9000000000000012">🖥️ CLI: python main.py</tspan><tspan x="315.5025" dy="16.900000000000002"><tspan font-weight="bold">(Ponto de Entrada)</tspan></tspan></text>
+</g>
+<g class="node" data-id="B" data-label="🎼 runner.py
+&lt;b&gt;(CoafPipeline - Orquestrador ETL)&lt;/b&gt;" data-shape="rectangle">
+  <rect x="194.4925" y="185.8" width="242.01999999999998" height="53.800000000000004" rx="0" ry="0" fill="#1d4ed8" stroke="#3b82f6" stroke-width="0.75" />
+  <text x="315.5025" y="212.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="315.5025" dy="-3.9000000000000012">🎼 runner.py</tspan><tspan x="315.5025" dy="16.900000000000002"><tspan font-weight="bold">(CoafPipeline - Orquestrador ETL)</tspan></tspan></text>
+</g>
+<g class="node" data-id="C" data-label="⚙️ extract.py
+&lt;b&gt;Motor Sintético Faker (pt_BR)&lt;/b&gt;" data-shape="rectangle">
+  <rect x="208.57150000000001" y="427.90000000000003" width="213.86199999999997" height="53.800000000000004" rx="0" ry="0" fill="#0284c7" stroke="#38bdf8" stroke-width="0.75" />
+  <text x="315.5025" y="454.8" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="315.5025" dy="-3.9000000000000012">⚙️ extract.py</tspan><tspan x="315.5025" dy="16.900000000000002"><tspan font-weight="bold">Motor Sintético Faker (pt_BR)</tspan></tspan></text>
+</g>
+<g class="node" data-id="D1" data-label="📄 dim_cliente.csv
+&lt;i&gt;5.000 clientes&lt;/i&gt;" data-shape="rectangle">
+  <rect x="56" y="598" width="149.39499999999998" height="53.800000000000004" rx="0" ry="0" fill="#334155" stroke="#94a3b8" stroke-width="0.75" />
+  <text x="130.6975" y="624.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="130.6975" dy="-3.9000000000000012">📄 dim_cliente.csv</tspan><tspan x="130.6975" dy="16.900000000000002"><tspan font-style="italic">5.000 clientes</tspan></tspan></text>
+</g>
+<g class="node" data-id="D2" data-label="📄 dim_tempo.csv
+&lt;i&gt;730 dias (2025/2027)&lt;/i&gt;" data-shape="rectangle">
+  <rect x="233.39499999999998" y="598" width="164.21499999999997" height="53.800000000000004" rx="0" ry="0" fill="#334155" stroke="#94a3b8" stroke-width="0.75" />
+  <text x="315.50249999999994" y="624.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="315.50249999999994" dy="-3.9000000000000012">📄 dim_tempo.csv</tspan><tspan x="315.50249999999994" dy="16.900000000000002"><tspan font-style="italic">730 dias (2025/2027)</tspan></tspan></text>
+</g>
+<g class="node" data-id="D3" data-label="📄 fato_transacoes.csv
+&lt;i&gt;40.000 transações (60% 2027 / 40% 2025)&lt;/i&gt;" data-shape="rectangle">
+  <rect x="425.61" y="598" width="281.293" height="53.800000000000004" rx="0" ry="0" fill="#334155" stroke="#94a3b8" stroke-width="0.75" />
+  <text x="566.2565" y="624.9" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="566.2565" dy="-3.9000000000000012">📄 fato_transacoes.csv</tspan><tspan x="566.2565" dy="16.900000000000002"><tspan font-style="italic">40.000 transações (60% 2027 / 40% 2025)</tspan></tspan></text>
+</g>
+<g class="node" data-id="E" data-label="⚙️ transform.py
+&lt;b&gt;Data Quality &amp; Enriquecimento&lt;/b&gt;" data-shape="rectangle">
+  <rect x="208.20099999999996" y="840.1" width="214.60299999999998" height="53.800000000000004" rx="0" ry="0" fill="#6d28d9" stroke="#a78bfa" stroke-width="0.75" />
+  <text x="315.50249999999994" y="867" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="315.50249999999994" dy="-3.9000000000000012">⚙️ transform.py</tspan><tspan x="315.50249999999994" dy="16.900000000000002"><tspan font-weight="bold">Data Quality &amp; Enriquecimento</tspan></tspan></text>
+</g>
+<g class="node" data-id="V1" data-label="✔️ Auditoria de PK / FK
+✔️ Regra Temporal 60/40
+✔️ Padronização de Tipos" data-shape="rectangle">
+  <rect x="97.644" y="1014.4250000000001" width="204.22899999999996" height="70.7" rx="0" ry="0" fill="#4c1d95" stroke="#7c3aed" stroke-width="0.75" />
+  <text x="199.75849999999997" y="1049.775" text-anchor="middle" font-size="13" font-weight="500" fill="#ddd"><tspan x="199.75849999999997" dy="-12.350000000000001">✔️ Auditoria de PK / FK</tspan><tspan x="199.75849999999997" dy="16.900000000000002">✔️ Regra Temporal 60/40</tspan><tspan x="199.75849999999997" dy="16.900000000000002">✔️ Padronização de Tipos</tspan></text>
+</g>
+<g class="node" data-id="F" data-label="🔗 INNER JOIN Dimensional
+&lt;b&gt;(One Big Table / ABT)&lt;/b&gt;" data-shape="rectangle">
+  <rect x="329.87299999999993" y="1014.4250000000001" width="202.74699999999996" height="53.800000000000004" rx="0" ry="0" fill="#7c3aed" stroke="#c4b5fd" stroke-width="0.75" />
+  <text x="431.2464999999999" y="1041.325" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="431.2464999999999" dy="-3.9000000000000012">🔗 INNER JOIN Dimensional</tspan><tspan x="431.2464999999999" dy="16.900000000000002"><tspan font-weight="bold">(One Big Table / ABT)</tspan></tspan></text>
+</g>
+<g class="node" data-id="G" data-label="⚙️ load.py
+&lt;b&gt;Módulo de Carga Dual&lt;/b&gt;" data-shape="rectangle">
+  <rect x="345.8045" y="1269.1999999999998" width="170.88399999999996" height="53.800000000000004" rx="0" ry="0" fill="#047857" stroke="#34d399" stroke-width="0.75" />
+  <text x="431.24649999999997" y="1296.1" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="431.24649999999997" dy="-3.9000000000000012">⚙️ load.py</tspan><tspan x="431.24649999999997" dy="16.900000000000002"><tspan font-weight="bold">Módulo de Carga Dual</tspan></tspan></text>
+</g>
+<g class="node" data-id="H" data-label="📁 data/processed/
+&lt;b&gt;transacoes_consolidadas.csv&lt;/b&gt;
+&lt;i&gt;(40.000 linhas x 24 colunas)&lt;/i&gt;" data-shape="rectangle">
+  <rect x="181.52500000000003" y="1439.2999999999997" width="222.75399999999996" height="70.7" rx="0" ry="0" fill="#065f46" stroke="#10b981" stroke-width="0.75" />
+  <text x="292.90200000000004" y="1474.6499999999996" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="292.90200000000004" dy="-12.350000000000001">📁 data/processed/</tspan><tspan x="292.90200000000004" dy="16.900000000000002"><tspan font-weight="bold">transacoes_consolidadas.csv</tspan></tspan><tspan x="292.90200000000004" dy="16.900000000000002"><tspan font-style="italic">(40.000 linhas x 24 colunas)</tspan></tspan></text>
+</g>
+<g class="node" data-id="I" data-label="🐬 MySQL Server: analise_dados_coaf
+&lt;b&gt;Tabela: transacoes_consolidadas&lt;/b&gt;
+&lt;i&gt;(Conexão Resiliente SQLAlchemy)&lt;/i&gt;" data-shape="cylinder">
+  <rect x="432.279" y="1446.2999999999997" width="274.62399999999997" height="70.7" fill="#047857" stroke="none" />
+  <line x1="432.279" y1="1446.2999999999997" x2="432.279" y2="1516.9999999999998" stroke="#6ee7b7" stroke-width="0.75" />
+  <line x1="706.903" y1="1446.2999999999997" x2="706.903" y2="1516.9999999999998" stroke="#6ee7b7" stroke-width="0.75" />
+  <ellipse cx="569.591" cy="1516.9999999999998" rx="137.31199999999998" ry="7" fill="#047857" stroke="#6ee7b7" stroke-width="0.75" />
+  <ellipse cx="569.591" cy="1446.2999999999997" rx="137.31199999999998" ry="7" fill="#047857" stroke="#6ee7b7" stroke-width="0.75" />
+  <text x="569.591" y="1481.6499999999996" text-anchor="middle" font-size="13" font-weight="500" fill="#fff"><tspan x="569.591" dy="-12.350000000000001">🐬 MySQL Server: analise_dados_coaf</tspan><tspan x="569.591" dy="16.900000000000002"><tspan font-weight="bold">Tabela: transacoes_consolidadas</tspan></tspan><tspan x="569.591" dy="16.900000000000002"><tspan font-style="italic">(Conexão Resiliente SQLAlchemy)</tspan></tspan></text>
+</g>
+</svg>

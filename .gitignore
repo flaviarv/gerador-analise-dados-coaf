@@ -15,18 +15,14 @@ __pycache__/
 .env.*
 !.env.example
 
-# Pastas ocultas e bases de dados
-data/
-**/data/
-docs/
-**/docs/
+# Bloqueia queries e arquivos de banco locais (mantém docs/, data/ e database/)
 queries/
 **/queries/
 *.db
 *.sqlite
 *.sqlite3
 
-# Configurações do VS Code (bloqueia tudo, sem subir preferências locais)
+# Configurações do VS Code
 .vscode/
 
 # Relatórios de testes e logs
@@ -41,4 +37,4 @@ docker-compose.override.yml
 # Ficheiros do sistema e rascunhos
 .DS_Store
 Thumbs.db
-README2.md
+README.md

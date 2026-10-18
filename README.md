@@ -1,6 +1,8 @@
 # Gerador de Análise de Dados COAF
 
-Aplicação em Python projetada para processamento e análise de dados relacionados a relatórios de conformidade e operações financeiras (COAF). O projeto é totalmente conteinerizado com Docker para garantir reprodução idêntica do ambiente de execução e facilitar a execução de rotinas de teste.
+A aplicação em Python combina um gerador de dados sintéticos organizados em tabelas relacionais com um pipeline de Engenharia e Análise de Dados (ETL), responsável pelo processamento e carregamento dos dados no MySQL. A arquitetura também permite a integração com outras bases de dados, conforme a necessidade. Além disso, a aplicação está conteinerizada com Docker para garantir reprodução idêntica do ambiente de execução e facilitar a execução de rotinas de teste de prevenção à lavagem de dinheiro.
+
+
 
 ---
 
